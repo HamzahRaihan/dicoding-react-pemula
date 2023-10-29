@@ -32,8 +32,8 @@ function Berita() {
   return (
     <div style={{ color: 'white' }}>
       <Header title={'latest news'} subtitle={'covering march and april 2022'} />
-      {newsData.map((item, index) => (
-        <Card key={index} title={item.title} date={item.date} content={item.content} image={item.image} category={item.category} link={item.link} />
+      {newsData.map((item) => (
+        <Card key={item.title} {...item} />
       ))}
     </div>
   );
