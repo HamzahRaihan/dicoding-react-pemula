@@ -5,6 +5,7 @@ import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Berita from './pages/Berita.jsx';
 import ArrayData from './pages/ArrayData.jsx';
+import CounterApp from './pages/ClassPages/CounterApp.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: 'dicoding-berita',
         element: <Berita />,
+      },
+      {
+        path: 'counter-class',
+        element: <CounterApp />,
       },
     ],
   },

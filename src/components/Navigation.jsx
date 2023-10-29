@@ -7,6 +7,7 @@ function Navigation() {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/array-data">Array</NavLink>
         <NavLink to="/dicoding-berita">berita</NavLink>
+        <NavLink to="/counter-class">counter (class comp)</NavLink>
       </nav>
     </>
   );
