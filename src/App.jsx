@@ -1,19 +1,16 @@
 import { useState } from 'react';
-
-import './App.css';
+import Navigation from './components/Navigation';
+import { Outlet } from 'react-router-dom';
 
 function App() {
-  const [names, setNames] = useState(['Asep', 'Alex', 'Bagus', 'Cika', 'Doni']);
-  console.log(names);
   return (
     <>
-      <ol>
-        {names.map((item, index) => (
-          <div key={index}>
-            <li>{item.toUpperCase()}</li>
-          </div>
-        ))}
-      </ol>
+      <div style={{ width: '100vw' }}>
+        <Navigation />
+        <div style={{ margin: '50px' }}>
+          <Outlet />
+        </div>
+      </div>
     </>
   );
 }
