@@ -6,11 +6,14 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Berita from './pages/Berita.jsx';
 import ArrayData from './pages/ArrayData.jsx';
 import CounterApp from './pages/ClassPages/CounterApp.jsx';
+import MyForm from './pages/ClassPages/MyForm.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <NotFound />,
     children: [
       {
         path: 'array-data',
@@ -23,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'counter-class',
         element: <CounterApp />,
+      },
+      {
+        path: 'class-form',
+        element: <MyForm />,
       },
     ],
   },

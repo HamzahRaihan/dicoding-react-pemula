@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Navigation from './components/Navigation';
 import { Outlet } from 'react-router-dom';
 
@@ -8,6 +7,9 @@ function App() {
       <div style={{ width: '100vw' }}>
         <Navigation />
         <div style={{ margin: '50px' }}>
+          <div>
+            <h5>This website made in purpose of learning react by course from dicoding</h5>
+          </div>
           <Outlet />
         </div>
       </div>

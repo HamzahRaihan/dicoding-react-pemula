@@ -8,6 +8,7 @@ function Navigation() {
         <NavLink to="/array-data">Array</NavLink>
         <NavLink to="/dicoding-berita">berita</NavLink>
         <NavLink to="/counter-class">counter (class comp)</NavLink>
+        <NavLink to="/class-form">form (class comp)</NavLink>
       </nav>
     </>
   );
